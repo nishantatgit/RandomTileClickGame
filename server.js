@@ -2,7 +2,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 
-const port = 9009;
+let port = process.env.PORT;
+
+if (port == null || port == "") {
+  port = 9009;
+}
 
 app.use(express.static("./public"));
 
