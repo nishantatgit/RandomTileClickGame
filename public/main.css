@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #02cbd2;
+  --secondary-color: #086a97;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+article,
+title {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: auto;
+}
+.card-grid {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 111px;
+  height: 111px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #02cbd2;
+  transition: background-color 0.3 linear;
+}
+
+.active-card {
+  background-color: #086a97;
+}
+
+.game-button-group {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.game-button-group .game-start-button {
+  margin-right: 20px;
+  border: 2px solid #02cbd2;
+  color: #02cbd2;
+}
+
+.game-button-group .game-start-button:hover {
+  background-color: #02cbd2;
+  color: #ffffff;
+}
+
+.game-button-group .game-end-button {
+  margin-right: 20px;
+  border: 2px solid #086a97;
+  color: #086a97;
+}
+
+.game-button-group .game-end-button:hover {
+  background-color: #086a97;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 20px 10px;
+  min-width: 250px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.game-button-group .disabled {
+  background-color: #f2f2f2;
+  border: none;
+  color: #d3d3d3;
+  pointer-events: none;
+  border-color: transparent;
+}
+
+.game-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px auto;
+}
+
+.game-title,
+.score {
+  display: inline-block;
+  font-size: 32px;
+}
+
+.score {
+  text-align: right;
+}
+
+.title-container {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.game-title {
+  width: 50%;
+  text-align: center;
+  transform: translateX(50%);
+}
+
+.score {
+  width: 49%;
+  text-align: right;
+}
